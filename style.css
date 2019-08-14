@@ -1,0 +1,49 @@
+/*****GLOBAL*****/
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*RESET*/
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+/***NAVIGATION***/
+.navBody {
+    height: 75px;
+    background: #434966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+
+.navList_item {
+    font-size: 2rem;
+    margin-right: 1em;
+    border: solid 1px white;
+    padding: 0.7em 1em;
+}
+
+.navList_item:last-child {
+    margin-right: 0em;
+}
+
+.navList_item:hover {
+    background: #69719b;
+    /* cursor: pointer; */
+}
+
