@@ -70,8 +70,6 @@ body {
 }
 
 /***Homepage***/
-
-
 .homepage {
     min-height: 90vh;
     background: goldenrod;
@@ -79,4 +77,36 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/***About Us***/
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 1em; 
+}
+
+.cards--small {
+    height: 40rem;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    outline: solid red;
+}
+
+.cards--med {
+    height: 50rem;
+    width: 80vw;
+    display: flex;
+    flex-flow: column, nowrap;
+    outline: solid red;
+}
+
+.cards_imgContainer {
+    max-height: 40%;
+}
+
+.cards_infoContainer {
+    min-height: 60%;
 }
