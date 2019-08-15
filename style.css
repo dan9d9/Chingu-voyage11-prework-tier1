@@ -9,11 +9,28 @@ body {
     font-size: 1.6rem;
 }
 
+
 /*RESET*/
 * {
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/**RESET HEADING SIZES**/
+.h1 {
+    font-size: 3.6rem;
+}
+
+.h2 {
+    font-size: 2.4rem;
+}
+
+.h3 {
+    font-size: 2.1rem;
+}
+
+.h4 {
+    font-size: 1.8rem;
 }
 
 /***NAVIGATION***/
@@ -52,3 +69,14 @@ body {
     /* cursor: pointer; */
 }
 
+/***Homepage***/
+
+
+.homepage {
+    min-height: 90vh;
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
