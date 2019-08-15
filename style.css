@@ -28,18 +28,23 @@ body {
 .navList {
     display: flex;
     list-style-type: none;
-    color: white;
 }
 
 .navList_item {
     font-size: 2rem;
     margin-right: 1em;
     border: solid 1px white;
-    padding: 0.7em 1em;
+    padding: 0.7em 0em;
 }
 
 .navList_item:last-child {
     margin-right: 0em;
+}
+
+.navList_item a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7em;
 }
 
 .navList_item:hover {
