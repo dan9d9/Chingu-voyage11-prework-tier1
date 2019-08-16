@@ -69,6 +69,24 @@ body {
     /* cursor: pointer; */
 }
 
+@media screen and (max-width: 670px) {
+    .navList_item {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navList_item {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navList_item {
+        font-size: 1rem;
+    }
+}
+
 /***Homepage***/
 .homepage {
     min-height: 90vh;
