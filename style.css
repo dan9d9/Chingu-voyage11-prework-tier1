@@ -72,11 +72,15 @@ body {
 /***Homepage***/
 .homepage {
     min-height: 90vh;
-    background: goldenrod;
+    background-image: url("../../../Desktop/Images/homepage_cover.jpg");
+    background-color: goldenrod;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow: 1px 2px #F79855; 
 }
 
 /***About Us***/
