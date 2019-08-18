@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
 }
 
 h3 {
@@ -114,7 +114,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
 }
 
     /*Card Template*/
@@ -231,7 +231,19 @@ h4 {
     }
 }
 
-
-
-
+/******SERVICES HEADER******/
+.ourServices_header {
+    min-height: 60vh;
+    background: #434966 url("../../../Desktop/Images/services_header.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3474A4;
+    text-shadow: 1px 1px black;
+    margin-bottom: 4em;
+    padding: 8em;
+    text-align: justify; 
+}
 
