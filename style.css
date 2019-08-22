@@ -165,26 +165,6 @@ h1, h2, h3, h4 {
     background-size: cover;
 }
 
-.image_container_about--1 {
-    background-image: url("bg_image/aboutUs_card1.jpg");
-}
-
-.image_container_about--2 {
-    background-image: url("bg_image/aboutUs_card2.jpg");
-}
-
-.image_container_about--3 {
-    background-image: url("bg_image/aboutUs_card3.jpg");
-}
-
-.image_container_about--4 {
-    background-image: url("bg_image/aboutUs_card4.jpg");
-}
-
-.image_container_about--5 {
-    background-image: url("bg_image/aboutUs_card5.jpg");
-}
-
 .content_container--sm {
     font-size: 1.5rem;   
     background: rgba(229, 105, 31, 0.04);
@@ -231,10 +211,17 @@ h1, h2, h3, h4 {
     height: 100%;
     margin: 0 auto;
     border-radius: 10px;
-    background: #F79855;
+    background: rgb(255, 135, 49);
     cursor: pointer;
     border: solid 1px black;
     color: white;
+    transition: all 0.3s; /*btn transition*/
+}
+
+.button_btn:hover {     /*btn transform on hover*/
+    transform: scale(1.1);
+    background: rgb(255, 112, 10);
+    box-shadow: 1px 1px 3px 0px black;
 }
 
 .button_content {
@@ -242,6 +229,29 @@ h1, h2, h3, h4 {
     width: 100%;
     bottom: 25%;
 }
+/***************END CARD TEMPLATE***************/
+
+.image_container_about--1 {
+    background-image: url("bg_image/aboutUs_card1.jpg");
+}
+
+.image_container_about--2 {
+    background-image: url("bg_image/aboutUs_card2.jpg");
+}
+
+.image_container_about--3 {
+    background-image: url("bg_image/aboutUs_card3.jpg");
+}
+
+.image_container_about--4 {
+    background-image: url("bg_image/aboutUs_card4.jpg");
+}
+
+.image_container_about--5 {
+    background-image: url("bg_image/aboutUs_card5.jpg");
+}
+
+
 
 @media screen and (min-width: 700px) {
     .aboutUs {
