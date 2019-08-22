@@ -98,7 +98,7 @@ h1, h2, h3, h4 {
 .homepage {
     min-height: 90vh;
     max-height: 585px;
-    background-image: url("../../../Desktop/Images/homepage_cover.jpg");
+    background-image: url("bg_image/homepage_cover.jpg");
     background-color: goldenrod;
     background-size: cover;
     background-attachment: fixed;
@@ -166,23 +166,23 @@ h1, h2, h3, h4 {
 }
 
 .image_container_about--1 {
-    background-image: url("../../../Desktop/Images/aboutUs_card1.jpg");
+    background-image: url("bg_image/aboutUs_card1.jpg");
 }
 
 .image_container_about--2 {
-    background-image: url("../../../Desktop/Images/aboutUs_card2.jpg");
+    background-image: url("bg_image/aboutUs_card2.jpg");
 }
 
 .image_container_about--3 {
-    background-image: url("../../../Desktop/Images/aboutUs_card3.jpg");
+    background-image: url("bg_image/aboutUs_card3.jpg");
 }
 
 .image_container_about--4 {
-    background-image: url("../../../Desktop/Images/aboutUs_card4.jpg");
+    background-image: url("bg_image/aboutUs_card4.jpg");
 }
 
 .image_container_about--5 {
-    background-image: url("../../../Desktop/Images/aboutUs_card5.jpg");
+    background-image: url("bg_image/aboutUs_card5.jpg");
 }
 
 .content_container--sm {
@@ -257,7 +257,7 @@ h1, h2, h3, h4 {
 /******SERVICES HEADER******/
 .ourServices_header {
     min-height: 60vh;
-    background: #434966 url("../../../Desktop/Images/services_header.jpg") no-repeat center;
+    background: #434966 url("bg_image/services_header.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -283,23 +283,23 @@ h1, h2, h3, h4 {
 }
 
 .image_container_services--1 {
-    background-image: url("../../../Desktop/Images/services_card1.jpg");
+    background-image: url("bg_image/services_card1.jpg");
 }
 
 .image_container_services--2 {
-    background-image: url("../../../Desktop/Images/services_card2.jpg");
+    background-image: url("bg_image/services_card2.jpg");
 }
 
 .image_container_services--3 {
-    background-image: url("../../../Desktop/Images/services_card3.jpg");
+    background-image: url("bg_image/services_card3.jpg");
 }
 
 .image_container_services--4 {
-    background-image: url("../../../Desktop/Images/services_card4.jpg");
+    background-image: url("bg_image/services_card4.jpg");
 }
 
 .image_container_services--5 {
-    background-image: url("../../../Desktop/Images/services_card5.jpg");
+    background-image: url("bg_image/services_card5.jpg");
 }
 
 @media screen and (min-width: 700px) {
@@ -330,7 +330,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../../../Desktop/Images/contact_image.jpg');
+    background-image: url('bg_image/contact_image.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
