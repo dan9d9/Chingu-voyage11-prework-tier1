@@ -1,0 +1,460 @@
+/******GLOBAL******/
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', serif;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.25;   
+}
+
+
+/***RESET***/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/***SET HEADING SIZES and FONTS***/
+h1 {
+    font-size: 6.6rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 2.1rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/******NAVIGATION******/
+.navBody {
+    height: 75px;
+    background-image: linear-gradient(to right, #5e627e, #434966, #434966, #5e627e);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+}
+
+.navList_item {
+    font-size: 2rem;
+    margin-right: 1em;
+    border: solid 1px white;
+    padding: 0.7em 0em;
+}
+
+.navList_item:last-child {
+    margin-right: 0em;
+}
+
+.navList_item a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7em;
+}
+
+.navList_item:hover {
+    background: #69719b;
+}
+
+@media screen and (max-width: 670px) {
+    .navList_item {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navList_item {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navList_item {
+        font-size: 1rem;
+    }
+}
+
+/******HOMEPAGE******/
+.homepage {
+    min-height: 90vh;
+    max-height: 585px;
+    background-image: url("bg_image/homepage_cover.jpg");
+    background-color: goldenrod;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px #F79855;
+    margin-bottom: 4em; 
+}
+
+/*******ABOUT US*******/
+.aboutUs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    /*Card Templates for aboutUs and Services*/
+.cards--small {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
+}
+
+.cards--med {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
+}
+
+.cards--lg {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
+}
+
+.image_container { 
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_container--lg { 
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_container_about--1 {
+    background-image: url("bg_image/aboutUs_card1.jpg");
+}
+
+.image_container_about--2 {
+    background-image: url("bg_image/aboutUs_card2.jpg");
+}
+
+.image_container_about--3 {
+    background-image: url("bg_image/aboutUs_card3.jpg");
+}
+
+.image_container_about--4 {
+    background-image: url("bg_image/aboutUs_card4.jpg");
+}
+
+.image_container_about--5 {
+    background-image: url("bg_image/aboutUs_card5.jpg");
+}
+
+.content_container--sm {
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
+}
+
+.content_container--med {
+    min-height: 60%;
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
+}
+
+.content_container--lg {
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
+}
+
+.heading_container {
+    padding: 0.3em;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #1F5396;
+    margin-bottom: 0.5em;
+}
+
+.text_container {
+    padding: 0.3em;
+}
+
+.button_container {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.button_btn {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #F79855;
+    cursor: pointer;
+    border: solid 1px black;
+    color: white;
+}
+
+.button_content {
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+}
+
+@media screen and (min-width: 700px) {
+    .aboutUs {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .cards--small {
+        width: 25vw;
+    }
+}
+
+/******SERVICES HEADER******/
+.ourServices_header {
+    min-height: 60vh;
+    background: #434966 url("bg_image/services_header.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3474A4;
+    text-shadow: 1px 1px black;
+    margin-bottom: 4em;
+    padding: 3em;
+    text-align: center; 
+}
+
+/******SERVICES******/
+.ourServices_services {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 4em; */
+}
+
+.image_container_services--1 {
+    background-image: url("bg_image/services_card1.jpg");
+}
+
+.image_container_services--2 {
+    background-image: url("bg_image/services_card2.jpg");
+}
+
+.image_container_services--3 {
+    background-image: url("bg_image/services_card3.jpg");
+}
+
+.image_container_services--4 {
+    background-image: url("bg_image/services_card4.jpg");
+}
+
+.image_container_services--5 {
+    background-image: url("bg_image/services_card5.jpg");
+}
+
+@media screen and (min-width: 700px) {
+    .ourServices_header {
+        padding: 8em;
+    }
+    
+    .ourServices_services {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .cards_services {
+        width: 34vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .cards_services {
+        width: 24vw;
+    }
+}
+
+/****CONTACT FORM*****/
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg_image/contact_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5em 2em;
+}
+
+.contact_header > h2 {
+    color: white;
+    text-shadow: 1px 1px #F79855;
+}
+.contact_description > p {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #F79855;
+}
+
+.contact_header {
+    margin-bottom: 2em;
+}
+
+.contact_description {
+    max-width: 700px;
+    margin-bottom: 2em;
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.form_container {
+    width: 100%;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameEmailSubj-container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.form_input-container {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0.5em;
+}
+
+.input_text {
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;  
+    border: none;
+    border-radius: 3px;
+}
+
+.form_textarea-container {
+    width: 100%;
+    max-width: 650px;
+    height: 30vw;
+    max-height: 250px;
+    margin-bottom: 0.5em;
+}
+
+.form_textarea {
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .contact_form {
+        margin: auto;
+        max-width: 900px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .nameEmailSubj-container {
+        width: 45%;
+        max-width: 400px;
+    }
+
+    .form_textarea-container {
+        width: 45%;
+        max-width: 400px;
+        max-height: 150px;
+    }
+}
+ /*****FOOTER*****/
+ .footer {
+     height: 150px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #5e627e;
+ }
+
+ .footer_content {
+     margin-bottom: 2em;
+ }
+
+ .footer_content > p {
+     text-align: center;
+     line-height: 1.5;
+     color: whitesmoke;
+ }
+
+ .footer_copyright p {
+    text-align: center; 
+    font-size: 12px;
+    color: whitesmoke;
+ }
+
+ hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+    margin-bottom: 2em;
+}
