@@ -17,7 +17,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
 }
-/***RESET HEADING SIZES and FONTS***/
+/***SET HEADING SIZES and FONTS***/
 h1 {
     font-size: 6.6rem;
 }
@@ -94,6 +94,7 @@ h4 {
 /******HOMEPAGE******/
 .homepage {
     min-height: 90vh;
+    max-height: 585px;
     background-image: url("../../../Desktop/Images/homepage_cover.jpg");
     background-color: goldenrod;
     background-size: cover;
@@ -102,7 +103,7 @@ h4 {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 1px 2px #F79855;
+    text-shadow: 1px 1px #F79855;
     margin-bottom: 4em; 
 }
 
@@ -228,16 +229,14 @@ h4 {
     border-radius: 10px;
     background: #F79855;
     cursor: pointer;
+    border: solid 1px black;
+    color: white;
 }
 
 .button_content {
     position: absolute;
     width: 100%;
     bottom: 25%;
-}
-
-.button_text {
-    color: white;
 }
 
 @media screen and (min-width: 700px) {
@@ -316,5 +315,106 @@ h4 {
 @media screen and (min-width: 900px) {
     .cards_services {
         width: 24vw;
+    }
+}
+
+/****CONTACT FORM*****/
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../Desktop/Images/contact_image.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5em 2em;
+}
+
+.contact_header > h2 {
+    color: white;
+    text-shadow: 1px 1px #F79855;
+}
+.contact_description > p {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #F79855;
+}
+
+.contact_header {
+    margin-bottom: 2em;
+}
+
+.contact_description {
+    max-width: 700px;
+    margin-bottom: 2em;
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.form_container {
+    width: 100%;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameEmailSubj-container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.form_input-container {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0.5em;
+}
+
+.input_text {
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;  
+    border: none;
+    border-radius: 3px;
+}
+
+.form_textarea-container {
+    width: 100%;
+    max-width: 650px;
+    height: 30vw;
+    max-height: 250px;
+    margin-bottom: 0.5em;
+}
+
+.form_textarea {
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .contact_form {
+        margin: auto;
+        max-width: 900px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .nameEmailSubj-container {
+        width: 45%;
+        max-width: 400px;
+    }
+
+    .form_textarea-container {
+        width: 45%;
+        max-width: 400px;
+        max-height: 150px;
     }
 }
