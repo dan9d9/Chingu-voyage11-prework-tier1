@@ -101,6 +101,7 @@ h1, h2, h3, h4 {
     background-image: url("../../../Desktop/Images/homepage_cover.jpg");
     background-color: goldenrod;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,6 +259,7 @@ h1, h2, h3, h4 {
     min-height: 60vh;
     background: #434966 url("../../../Desktop/Images/services_header.jpg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,6 +333,7 @@ h1, h2, h3, h4 {
     background-image: url('../../../Desktop/Images/contact_image.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     padding: 5em 2em;
 }
 
