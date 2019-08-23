@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8"/>
     <title>Conquer clone</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> <body>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
     <nav class="navBody">
         <ul class="navList">
             <li class="navList_item"><a href="#homepageID">Homepage</a></li>
@@ -12,7 +15,7 @@
             <li class="navList_item"><a href="#contactID">Contact</a></li>
             <li class="navList_item"><a href="#">External</a></li>
         </ul>
-        <div class="toTop"></div>
+        <button onclick="topFunction()" id="btnTop" class="topBtn"><span class="upArrow">&#8743;</span></button>
     </nav>
     <main>
         <header id="homepageID" class="homepage">
@@ -259,13 +262,18 @@
     </main>
         <footer class="footer">
             <div class="footer_content">
-                <p>Use it free!</p>
-                <p>“Conquer is free Bootstrap template from templatemo website. No backlink is required to use this layout.”</p>
+                <p class="footer_p p1">Use it free!</p>
+                <p class="footer_p p2">“Conquer is free Bootstrap template from templatemo website. No backlink is required to use this layout.”</p>
             </div>
             <hr>
             <div class="footer_copyright">
                 <p>Copyright © 2019 Conquer Clone for Chingu Voyage 11 | Design: Daniel Dick</p>
             </div>
         </footer>
+
+
+
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
