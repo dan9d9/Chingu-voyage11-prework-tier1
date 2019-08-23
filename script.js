@@ -1,4 +1,4 @@
-// When the user scrolls down 75px from the top of the document, show the button
+// TO TOP BUTTON
 window.onscroll = function() {scrollFunction()};
 const button = document.getElementById("btnTop");
 
@@ -26,3 +26,7 @@ function topFunction() {
 
 //Base code copy/pasted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 //Transition code added by Daniel Dick
+
+
+//SMOOTH SCROLL
+const links = document.querySelectorAll('a');
