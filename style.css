@@ -41,11 +41,12 @@ h1, h2, h3, h4 {
 /******NAVIGATION******/
 .navBody {
     height: 75px;
+    width: 100%;
     background-image: linear-gradient(to right, #5e627e, #434966, #434966, #5e627e);  
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -56,10 +57,10 @@ h1, h2, h3, h4 {
 }
 
 .navList_item {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-right: 1em;
     border: solid 1px white;
-    padding: 0.7em 0.5em;
+    padding: 0.7em 0em;
 }
 
 .navList_item:last-child {
@@ -76,22 +77,40 @@ h1, h2, h3, h4 {
     background: #69719b;
 }
 
-@media screen and (max-width: 670px) {
-    .navList_item {
-        font-size: 1.5rem;
-    }
+.toTop {
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 403px) {
     .navList_item {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 537px) {
     .navList_item {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        padding: 0.7em 0.5em;
     }
+}
+
+@media screen and (min-width: 610px) {
+    .navList_item {
+        font-size: 1.6rem;
+        padding: 0.7em 0.5em;
+    }
+}
+
+@media screen and (min-width: 796px) {
+    .navList_item {
+        font-size: 2rem;
+        padding: 0.7em 0.7em;
+    }
+}
+
+main {
+    position: relative;
+    top: 75px;
 }
 
 /******HOMEPAGE******/
