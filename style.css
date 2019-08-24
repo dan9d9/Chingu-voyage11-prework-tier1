@@ -158,9 +158,10 @@ main {
     min-height: 90vh;
     max-height: 585px;
     background-image: url("bg_image/homepage_cover.jpg");
+    background-repeat: no-repeat;
     background-color: goldenrod;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,9 +327,10 @@ main {
 /******SERVICES HEADER******/
 .ourServices_header {
     min-height: 60vh;
-    background: #434966 url("bg_image/services_header.jpg") no-repeat center;
+    background-image: url("bg_image/services_header.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
