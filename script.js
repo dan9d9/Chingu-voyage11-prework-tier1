@@ -1,4 +1,4 @@
-// TO TOP BUTTON
+// SCROLL TO TOP BUTTON
 window.onscroll = function() {scrollFunction()};
 const button = document.getElementById("btnTop");
 
@@ -28,5 +28,30 @@ function topFunction() {
 //Transition code added by Daniel Dick
 
 
-//SMOOTH SCROLL
-const links = document.querySelectorAll('a');
+
+// PARALLAX
+const parallax = document.querySelectorAll('.parallax');
+
+window.addEventListener('scroll', function(){
+  const target = document.querySelectorAll('.parallax');
+  
+  target.forEach(prllx => {
+    let pos = window.pageYOffset * prllx.dataset.rate + 'px';
+    prllx.style.backgroundPositionY = pos;
+});
+})
+
+// ABOVE CODE WRITTEN OUT
+// const parallax = document.querySelectorAll('.parallax');
+
+// window.addEventListener('scroll', addParallax);
+
+// function addParallax() {
+//    for(i=0;i<parallax.length;i++) {
+//      let pos = window.pageYOffset * parallax[i].dataset.rate + 'px';
+//      parallax[i].style.backgroundPositionY = pos;     
+//  }
+
+// }
+// This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
+// I like this method because my images require different rates of offset
