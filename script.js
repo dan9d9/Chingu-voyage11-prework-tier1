@@ -20,12 +20,12 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;  //For Safari
-  document.documentElement.scrollTop = 0;   // For Chrome, Firefox, IE and Opera
+  document.body.scrollIntoView({behavior: "smooth", block: "start"});  //For Safari
+  document.documentElement.scrollIntoView({behavior: "smooth", block: "start"});   // For Chrome, Firefox, IE and Opera
 }
-
 //Base code copy/pasted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 //Transition code added by Daniel Dick
+
 
 
 
@@ -41,27 +41,13 @@ window.addEventListener('scroll', function(){
     prllx.style.backgroundPositionY = pos;
 });
 })
-
-
-// ABOVE CODE WRITTEN OUT
-// const parallax = document.querySelectorAll('.parallax');
-
-// window.addEventListener('scroll', addParallax);
-
-// function addParallax() {
-//    for(i=0;i<parallax.length;i++) {
-//      let pos = window.pageYOffset * parallax[i].dataset.rate + 'px';
-//      parallax[i].style.backgroundPositionY = pos;     
-//  }
-
-// }
 // This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
 // I like this method because my images require different rates of offset
     
     
-// Remove parallax effect from Service background on screen-widths smaller than 1090px
-// The parallax gets funky on smaller screen sizes and I don't want to mess with it :)
-function resizeHandler() {    
+// REMOVE PARALLAX
+// The parallax gets funky on smaller screen sizes and I'll try and come back to figure it out, but for now...
+function parallaxRemove() {    
   if(window.innerWidth < 1090) {    // If screen size is <1090px...
     serviceHeader.classList.remove('parallax');   // remove parallax class
     serviceHeader.style.backgroundPositionY = 0;  //reset the background image to the top of its container
@@ -72,4 +58,22 @@ function resizeHandler() {
   }
 }
 
-window.addEventListener('resize', resizeHandler);
+window.addEventListener('resize', parallaxRemove);
+
+
+//SMOOTH SCROLL
+
+const links = document.querySelectorAll(".navList_item");
+
+links.forEach(link => link.addEventListener('click', scroll));    
+
+function scroll(event) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute('href');
+  const destination = document.querySelector(targetId).offsetTop;
+  window.scrollTo({
+    top: destination,
+    behavior: 'smooth'
+  });
+}
+
