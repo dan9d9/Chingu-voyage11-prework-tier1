@@ -1,5 +1,6 @@
-// TO TOP BUTTON
+// SCROLL TO TOP BUTTON
 window.onscroll = function() {scrollFunction()};
+
 const button = document.getElementById("btnTop");
 
 function removeClass(){     //Removes 'btnEnter' class when called from Event Listener
@@ -14,19 +15,47 @@ function scrollFunction() {
         button.addEventListener('transitionend', removeClass);  // listen for 'btnEnter' transition to end and remove 'btnEnter' class
     } else { button.style.display = "block"}    // If scrolled below 75px and button is not hidden - remain not hidden
   } else {
-      button.style.display = "none";    // If scrolled above 75px - hide button
+    button.style.display = "none";  // If scrolled above 75px - hide button...
+    removeClass();    //and remove 'btnEnter' class    
   }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;  //For Safari
-  document.documentElement.scrollTop = 0;   // For Chrome, Firefox, IE and Opera
+  document.body.scrollIntoView({behavior: "smooth", block: "start"});  //For Safari
+  document.documentElement.scrollIntoView({behavior: "smooth", block: "start"});   // For Chrome, Firefox, IE and Opera
 }
-
 //Base code copy/pasted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 //Transition code added by Daniel Dick
 
 
+
+
+// PARALLAX
+const parallax = document.querySelectorAll('.parallax');
+
+window.addEventListener('scroll', function(){
+  const target = document.querySelectorAll('.parallax');
+  target.forEach(prllx => {
+    let pos = (window.pageYOffset - prllx.offsetTop) * prllx.dataset.rate + 'px';
+    prllx.style.backgroundPositionY = pos;
+});
+})
+// This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
+    
+
 //SMOOTH SCROLL
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll(".navList_item");
+
+links.forEach(link => link.addEventListener('click', scroll));    
+
+function scroll(e) {
+  e.preventDefault();
+  const targetId = e.target.getAttribute('href');
+  const destination = document.querySelector(targetId).offsetTop;
+  window.scrollTo({
+    top: destination,
+    behavior: 'smooth'
+  });
+}
+
