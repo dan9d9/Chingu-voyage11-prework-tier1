@@ -89,8 +89,8 @@ h1, h2, h3, h4 {
     color: white;
     background-color: rgb(54, 115, 168);
     cursor: pointer;
-    padding: 15px;
     transition: all 0.5s;
+    outline: solid red;
 }
 
 .topBtn:hover {
@@ -105,11 +105,14 @@ h1, h2, h3, h4 {
     color: goldenrod;
 }
 
-.upArrow {
-    position: absolute;
-    bottom: 10px;
-    right: 12.5px;
+.upArrow {    
+    /* position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 5px; */
     font-size: 3rem;
+    outline: solid green;
 }
 
 @media screen and (min-width: 403px) {
@@ -157,7 +160,7 @@ main {
 .homepage {
     min-height: 90vh;
     max-height: 585px;
-    background-image: url("bg_image/homepage_cover.jpg");
+    background-image: url(bg_image/homepage_cover.jpg);
     background-repeat: no-repeat;
     background-color: goldenrod;
     background-size: cover;
@@ -292,23 +295,23 @@ main {
 /***************END CARD TEMPLATE***************/
 
 .image_container_about--1 {
-    background-image: url("bg_image/aboutUs_card1.jpg");
+    background-image: url(bg_image/aboutUs_card1.jpg);
 }
 
 .image_container_about--2 {
-    background-image: url("bg_image/aboutUs_card2.jpg");
+    background-image: url(bg_image/aboutUs_card2.jpg);
 }
 
 .image_container_about--3 {
-    background-image: url("bg_image/aboutUs_card3.jpg");
+    background-image: url(bg_image/aboutUs_card3.jpg);
 }
 
 .image_container_about--4 {
-    background-image: url("bg_image/aboutUs_card4.jpg");
+    background-image: url(bg_image/aboutUs_card4.jpg);
 }
 
 .image_container_about--5 {
-    background-image: url("bg_image/aboutUs_card5.jpg");
+    background-image: url(bg_image/aboutUs_card5.jpg);
 }
 
 
@@ -327,7 +330,7 @@ main {
 /******SERVICES HEADER******/
 .ourServices_header {
     min-height: 60vh;
-    background-image: url("bg_image/services_header.jpg");
+    background-image: url(bg_image/services_header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -355,23 +358,23 @@ main {
 }
 
 .image_container_services--1 {
-    background-image: url("bg_image/services_card1.jpg");
+    background-image: url(bg_image/services_card1.jpg);
 }
 
 .image_container_services--2 {
-    background-image: url("bg_image/services_card2.jpg");
+    background-image: url(bg_image/services_card2.jpg);
 }
 
 .image_container_services--3 {
-    background-image: url("bg_image/services_card3.jpg");
+    background-image: url(bg_image/services_card3.jpg);
 }
 
 .image_container_services--4 {
-    background-image: url("bg_image/services_card4.jpg");
+    background-image: url(bg_image/services_card4.jpg);
 }
 
 .image_container_services--5 {
-    background-image: url("bg_image/services_card5.jpg");
+    background-image: url(bg_image/services_card5.jpg);
 }
 
 @media screen and (min-width: 700px) {
@@ -402,7 +405,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('bg_image/contact_image.jpg');
+    background-image: url(bg_image/contact_image.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
