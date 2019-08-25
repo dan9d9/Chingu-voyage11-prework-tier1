@@ -31,38 +31,18 @@ function topFunction() {
 
 // PARALLAX
 const parallax = document.querySelectorAll('.parallax');
-const serviceHeader = document.querySelector('#service_header');
 
 window.addEventListener('scroll', function(){
   const target = document.querySelectorAll('.parallax');
-  
   target.forEach(prllx => {
-    let pos = window.pageYOffset * prllx.dataset.rate + 'px';
+    let pos = (window.pageYOffset - prllx.offsetTop) * prllx.dataset.rate + 'px';
     prllx.style.backgroundPositionY = pos;
 });
 })
 // This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
-// I like this method because my images require different rates of offset
     
-    
-// REMOVE PARALLAX
-// The parallax gets funky on smaller screen sizes and I'll try and come back to figure it out, but for now...
-function parallaxRemove() {    
-  if(window.innerWidth < 1090) {    // If screen size is <1090px...
-    serviceHeader.classList.remove('parallax');   // remove parallax class
-    serviceHeader.style.backgroundPositionY = 0;  //reset the background image to the top of its container
-    serviceHeader.style.backgroundAttachment = 'fixed';   //set the image as fixed
-  } else {
-    serviceHeader.classList.add('parallax');    // If screen size is > 1090px (re)add parallax class...
-    serviceHeader.style.backgroundAttachment = '';  // and remove fixed attachment from image
-  }
-}
-
-window.addEventListener('resize', parallaxRemove);
-
 
 //SMOOTH SCROLL
-
 const links = document.querySelectorAll(".navList_item");
 
 links.forEach(link => link.addEventListener('click', scroll));    
