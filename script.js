@@ -29,31 +29,18 @@ function topFunction() {
 //Transition code added by Daniel Dick
 
 
-
-
 // PARALLAX
-// const parallax = document.querySelectorAll('.parallax');
 
-// window.addEventListener('scroll', function(){
-//   const target = document.querySelectorAll('.parallax');
-//   target.forEach(prllx => {
-//     let pos = (window.pageYOffset - prllx.offsetTop) * prllx.dataset.rate + 'px';
-//     prllx.style.backgroundPositionY = pos;
-// });
-// })
+const parallax = document.querySelectorAll('.parallax');
+
+window.addEventListener('scroll', function(){
+  const target = document.querySelectorAll('.parallax');
+  target.forEach(prllx => {
+    let pos = (window.pageYOffset - prllx.offsetTop) * prllx.dataset.rate + 'px';
+    prllx.style.backgroundPositionY = pos;
+});
+})
 // This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
-
-
-
-  const parallax = document.querySelectorAll('.parallax');
-  window.addEventListener('scroll', () => {
-    let offset = window.pageYOffset;
-    for (let i = 0; i < parallax.length; i++) {
-      parallax[i].style.backgroundPositionY =
-        (offset - parallax[i].offsetTop) * -0.5 + 'px';
-    }
-  });
-
 
 
 //SMOOTH SCROLL
