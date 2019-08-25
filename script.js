@@ -29,9 +29,8 @@ function topFunction() {
 //Transition code added by Daniel Dick
 
 
-
-
 // PARALLAX
+
 const parallax = document.querySelectorAll('.parallax');
 
 window.addEventListener('scroll', function(){
@@ -42,7 +41,7 @@ window.addEventListener('scroll', function(){
 });
 })
 // This base code taken from DesignCourse: https://www.youtube.com/watch?v=Dxm6EwvQIl8 //
-    
+
 
 //SMOOTH SCROLL
 const links = document.querySelectorAll(".navList_item");
