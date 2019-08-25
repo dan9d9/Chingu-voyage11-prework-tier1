@@ -1,5 +1,6 @@
 // SCROLL TO TOP BUTTON
 window.onscroll = function() {scrollFunction()};
+
 const button = document.getElementById("btnTop");
 
 function removeClass(){     //Removes 'btnEnter' class when called from Event Listener
@@ -14,7 +15,8 @@ function scrollFunction() {
         button.addEventListener('transitionend', removeClass);  // listen for 'btnEnter' transition to end and remove 'btnEnter' class
     } else { button.style.display = "block"}    // If scrolled below 75px and button is not hidden - remain not hidden
   } else {
-      button.style.display = "none";    // If scrolled above 75px - hide button
+    button.style.display = "none";  // If scrolled above 75px - hide button...
+    removeClass();    //and remove 'btnEnter' class    
   }
 }
 
@@ -47,9 +49,9 @@ const links = document.querySelectorAll(".navList_item");
 
 links.forEach(link => link.addEventListener('click', scroll));    
 
-function scroll(event) {
-  event.preventDefault();
-  const targetId = event.target.getAttribute('href');
+function scroll(e) {
+  e.preventDefault();
+  const targetId = e.target.getAttribute('href');
   const destination = document.querySelector(targetId).offsetTop;
   window.scrollTo({
     top: destination,
