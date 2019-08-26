@@ -52,11 +52,10 @@ function scroll(e) {
   e.preventDefault();
   const targetId = e.target.getAttribute('href');
   const destination = document.querySelector(targetId).offsetTop;
-  const destinationEdge = document.querySelector(targetId); // For Microsoft Edge
-  window.scrollTo({   // ScrollTo isn't working in Edge
+  window.scrollTo({
     top: destination,
+    left: 0,
     behavior: 'smooth'
   });
-  destinationEdge.scrollIntoView(); // For Microsoft Edge
 }
 
