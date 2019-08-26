@@ -111,6 +111,7 @@ h1, h2, h3, h4 {
     font-size: 3rem;
 }
 
+    /**Navigation Media Queries**/
 @media screen and (min-width: 403px) {
     .navList_item {
         font-size: 1.2rem;
@@ -146,6 +147,7 @@ h1, h2, h3, h4 {
         padding: 0.7em 1em;
     }
 }
+/******END NAVIGATION******/
 
 main {
     position: relative;
@@ -169,6 +171,117 @@ main {
     text-shadow: 1px 1px #F79855;
     margin-bottom: 4em; 
 }
+/******END HOMEPAGE******/
+
+/*Card Templates for aboutUs and Services*/
+.cards--small {
+display: flex;
+flex-direction: column;
+width: 80%;
+max-width: 300px;
+margin-bottom: 4em;
+border: solid 0.5px black;
+border-radius: 3px;
+}
+
+.cards--med {
+display: flex;
+flex-direction: column;
+width: 80%;
+max-width: 600px;
+margin-bottom: 4em;
+border: solid 0.5px black;
+border-radius: 3px;
+}
+
+.cards--lg {
+display: flex;
+flex-direction: column;
+width: 90%;
+margin-bottom: 4em;
+border: solid 0.5px black;
+border-radius: 3px;
+}
+
+.image_container { 
+width: 100%;
+height: 200px;
+background-position: center;
+background-size: cover;
+}
+
+.image_container--lg { 
+width: 100%;
+height: 300px;
+background-position: center;
+background-size: cover;
+}
+
+.content_container--sm {
+font-size: 1.5rem;   
+background: rgba(229, 105, 31, 0.04);
+padding: 0.5em;
+}
+
+.content_container--med {
+min-height: 60%;
+font-size: 1.5rem;   
+background: rgba(229, 105, 31, 0.04);
+padding: 0.5em;
+}
+
+.content_container--lg {
+font-size: 1.5rem;   
+background: rgba(229, 105, 31, 0.04);
+padding: 0.5em;
+}
+
+.heading_container {
+padding: 0.3em;
+text-align: center;
+font-size: 2.4rem;
+color: #1F5396;
+margin-bottom: 0.5em;
+}
+
+.text_container {
+padding: 0.3em;
+}
+
+.button_container {
+width: 100%;
+height: 50px;
+text-align: center;
+margin: 0 auto;
+padding: 0.5em;
+}
+
+.button_btn {
+position: relative;
+display: block;
+width: 100px;
+height: 100%;
+margin: 0 auto;
+border-radius: 10px;
+background: rgb(255, 135, 49);
+cursor: pointer;
+border: solid 1px black;
+color: white;
+transition: all 0.3s; /*btn transition*/
+}
+
+.button_btn:hover {     /*btn transform on hover*/
+transform: scale(1.1);
+background: rgb(255, 112, 10);
+box-shadow: 1px 1px 3px 0px black;
+}
+
+.button_content {
+position: absolute;
+width: 100%;
+bottom: 25%;
+}
+/*END Card Templates*/
 
 /*******ABOUT US*******/
 .aboutUs {
@@ -179,116 +292,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-    /*Card Templates for aboutUs and Services*/
-.cards--small {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 4em;
-    border: solid 0.5px black;
-    border-radius: 3px;
-}
-
-.cards--med {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 600px;
-    margin-bottom: 4em;
-    border: solid 0.5px black;
-    border-radius: 3px;
-}
-
-.cards--lg {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-bottom: 4em;
-    border: solid 0.5px black;
-    border-radius: 3px;
-}
-
-.image_container { 
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-}
-
-.image_container--lg { 
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-}
-
-.content_container--sm {
-    font-size: 1.5rem;   
-    background: rgba(229, 105, 31, 0.04);
-    padding: 0.5em;
-}
-
-.content_container--med {
-    min-height: 60%;
-    font-size: 1.5rem;   
-    background: rgba(229, 105, 31, 0.04);
-    padding: 0.5em;
-}
-
-.content_container--lg {
-    font-size: 1.5rem;   
-    background: rgba(229, 105, 31, 0.04);
-    padding: 0.5em;
-}
-
-.heading_container {
-    padding: 0.3em;
-    text-align: center;
-    font-size: 2.4rem;
-    color: #1F5396;
-    margin-bottom: 0.5em;
-}
-
-.text_container {
-    padding: 0.3em;
-}
-
-.button_container {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.5em;
-}
-
-.button_btn {
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    background: rgb(255, 135, 49);
-    cursor: pointer;
-    border: solid 1px black;
-    color: white;
-    transition: all 0.3s; /*btn transition*/
-}
-
-.button_btn:hover {     /*btn transform on hover*/
-    transform: scale(1.1);
-    background: rgb(255, 112, 10);
-    box-shadow: 1px 1px 3px 0px black;
-}
-
-.button_content {
-    position: absolute;
-    width: 100%;
-    bottom: 25%;
-}
-/***************END CARD TEMPLATE***************/
 
 .image_container_about--1 {
     background-image: url(bg_image/aboutUs_card1.jpg);
@@ -311,7 +314,7 @@ main {
 }
 
 
-
+    /*About Us Media Queries*/
 @media screen and (min-width: 700px) {
     .aboutUs {
         flex-flow: row wrap;
@@ -322,6 +325,7 @@ main {
         width: 25vw;
     }
 }
+/*******END ABOUT US*******/
 
 /******SERVICES HEADER******/
 .ourServices_header {
@@ -350,7 +354,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 4em; */
 }
 
 .image_container_services--1 {
@@ -373,6 +376,7 @@ main {
     background-image: url(bg_image/services_card5.jpg);
 }
 
+    /* Services Media Queries*/
 @media screen and (min-width: 700px) {
     .ourServices_header {
         padding: 8em;
@@ -393,6 +397,7 @@ main {
         width: 24vw;
     }
 }
+/******END SERVICES******/
 
 /****CONTACT FORM*****/
 .contact {
@@ -476,6 +481,7 @@ main {
     border-radius: 3px;
 }
 
+    /*Contact Media Queries*/
 @media screen and (min-width: 678px) {
     
     .contact_form {
@@ -496,6 +502,8 @@ main {
         max-height: 150px;
     }
 }
+/******END CONTACT******/
+
  /*****FOOTER*****/
  .footer {
      position: relative;
@@ -536,6 +544,7 @@ main {
     margin-bottom: 1em;
 }
 
+    /*Footer Media Queries*/
 @media screen and (min-width: 819px) {
     .footer_content {
         margin-bottom: 1em;
