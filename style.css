@@ -70,7 +70,7 @@ h1, h2, h3, h4 {
 .navList_item a {
     text-decoration: none;
     color: white;
-    padding: 0.7em;
+    padding: 0.7em 0.5em;
 }
 
 .navList_item:hover {
