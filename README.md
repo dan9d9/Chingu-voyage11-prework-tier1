@@ -9,7 +9,7 @@ This project was created for the [Chingu](https://chingu.io/) Voyage 11 pre-work
 * Smooth Scrolling using Javascript
 
 
-#### You can check out my live link [here](https://dan9d9.github.io/Chingu-voyage11-prework-tier1/).
+#### You can check out my live link [HERE](https://dan9d9.github.io/Chingu-voyage11-prework-tier1/).
 
 <br>
 
