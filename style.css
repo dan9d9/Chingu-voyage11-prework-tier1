@@ -158,15 +158,19 @@ h1, h2, h3, h4 {
     .navList_item {
         padding: 0.5em 0em; 
     }
+    
+    .upArrow {  
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 2200px) {
     .navList_item {
         padding: 0.2em 0em; 
-    }
-
+    } 
+    
     .upArrow {  
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
