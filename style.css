@@ -572,6 +572,27 @@ main {
         max-height: 150px;
     }
 }
+
+@media screen and (min-width: 1500px) {
+    .contact_description {
+        max-width: 75%;
+    }
+
+    .contact_form {
+        width: 75%;
+        max-width: 1650px;
+    }
+
+    .nameEmailSubj-container {
+        max-width: 50%;
+    }
+
+    .form_textarea-container {
+        max-width: 50%;
+    }
+
+    
+}
 /******END CONTACT******/
 
  /*****FOOTER*****/
