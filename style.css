@@ -5,6 +5,20 @@ html {
     font-family: 'Open Sans', serif;
 }
 
+/**FONT SIZE MEDIA QUERIES**/
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    html {
+        font-size: 20px;
+    }
+}
+/*****END FONT SIZE QUERIES*******/
+
 body {
     font-size: 1.6rem;
     line-height: 1.25;   
@@ -132,21 +146,34 @@ h1, h2, h3, h4 {
     .navList_item {
         font-size: 1.6rem;
     }
-
-    .navList_item a {
-        padding: 0.7em 1em;
-    }
 }
 
 @media screen and (min-width: 796px) {
     .navList_item {
         font-size: 2rem;
     }
+}
 
-    .navList_item a {
-        padding: 0.7em 1em;
+@media screen and (min-width: 1500px) {
+    .navList_item {
+        padding: 0.5em 0em; 
+    }
+    
+    .upArrow {  
+        font-size: 2rem;
     }
 }
+
+@media screen and (min-width: 2200px) {
+    .navList_item {
+        padding: 0.2em 0em; 
+    } 
+    
+    .upArrow {  
+        font-size: 1.5rem;
+    }
+}
+
 /******END NAVIGATION******/
 
 main {
@@ -175,113 +202,168 @@ main {
 
 /*Card Templates for aboutUs and Services*/
 .cards--small {
-display: flex;
-flex-direction: column;
-width: 80%;
-max-width: 300px;
-margin-bottom: 4em;
-border: solid 0.5px black;
-border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
 }
 
 .cards--med {
-display: flex;
-flex-direction: column;
-width: 80%;
-max-width: 600px;
-margin-bottom: 4em;
-border: solid 0.5px black;
-border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
 }
 
 .cards--lg {
-display: flex;
-flex-direction: column;
-width: 90%;
-margin-bottom: 4em;
-border: solid 0.5px black;
-border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 4em;
+    border: solid 0.5px black;
+    border-radius: 3px;
 }
 
 .image_container { 
-width: 100%;
-height: 200px;
-background-position: center;
-background-size: cover;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
 }
 
 .image_container--lg { 
-width: 100%;
-height: 300px;
-background-position: center;
-background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
 }
 
 .content_container--sm {
-font-size: 1.5rem;   
-background: rgba(229, 105, 31, 0.04);
-padding: 0.5em;
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
 }
 
 .content_container--med {
-min-height: 60%;
-font-size: 1.5rem;   
-background: rgba(229, 105, 31, 0.04);
-padding: 0.5em;
+    min-height: 60%;
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
 }
 
 .content_container--lg {
-font-size: 1.5rem;   
-background: rgba(229, 105, 31, 0.04);
-padding: 0.5em;
+    font-size: 1.5rem;   
+    background: rgba(229, 105, 31, 0.04);
+    padding: 0.5em;
 }
 
 .heading_container {
-padding: 0.3em;
-text-align: center;
-font-size: 2.4rem;
-color: #1F5396;
-margin-bottom: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #1F5396;
+    margin-bottom: 0.5em;
 }
 
 .text_container {
-padding: 0.3em;
+    text-align: center;
+    padding: 0.3em;
 }
 
 .button_container {
-width: 100%;
-height: 50px;
-text-align: center;
-margin: 0 auto;
-padding: 0.5em;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5em;
 }
 
 .button_btn {
-position: relative;
-display: block;
-width: 100px;
-height: 100%;
-margin: 0 auto;
-border-radius: 10px;
-background: rgb(255, 135, 49);
-cursor: pointer;
-border: solid 1px black;
-color: white;
-transition: all 0.3s; /*btn transition*/
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgb(255, 135, 49);
+    cursor: pointer;
+    border: solid 1px black;
+    color: white;
+    transition: all 0.3s; /*btn transition*/
 }
 
 .button_btn:hover {     /*btn transform on hover*/
-transform: scale(1.1);
-background: rgb(255, 112, 10);
-box-shadow: 1px 1px 3px 0px black;
+    transform: scale(1.1);
+    background: rgb(255, 112, 10);
+    box-shadow: 1px 1px 3px 0px black;
 }
 
 .button_content {
-position: absolute;
-width: 100%;
-bottom: 25%;
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
 }
 /*END Card Templates*/
+
+/*Card Media Queries*/
+@media screen and (min-width: 700px) {
+    .cards--small {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .cards--small {
+        max-width: 500px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        width: 45vw;
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .cards--small {
+        max-width: 800px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        max-width: 1200px;
+    }
+
+    .image_container { 
+        height: 250px;
+    }
+
+    .button_container {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    .cards--small {
+        max-width: 1000px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        max-width: 1400px;
+    }
+
+    .content_container--med {
+        min-height: 80%;
+        }
+}
+/****END CARD MEDIA QUERIES****/
 
 /*******ABOUT US*******/
 .aboutUs {
@@ -320,10 +402,6 @@ bottom: 25%;
         flex-flow: row wrap;
         justify-content: space-around;
     }
-
-    .cards--small {
-        width: 25vw;
-    }
 }
 /*******END ABOUT US*******/
 
@@ -344,6 +422,10 @@ bottom: 25%;
     margin-bottom: 4em;
     padding: 3em;
     text-align: center; 
+}
+
+.ourServices_header > p {
+    font-size: 1.8rem;
 }
 
 /******SERVICES******/
@@ -501,6 +583,27 @@ bottom: 25%;
         max-width: 400px;
         max-height: 150px;
     }
+}
+
+@media screen and (min-width: 1500px) {
+    .contact_description {
+        max-width: 75%;
+    }
+
+    .contact_form {
+        width: 75%;
+        max-width: 1650px;
+    }
+
+    .nameEmailSubj-container {
+        max-width: 50%;
+    }
+
+    .form_textarea-container {
+        max-width: 50%;
+    }
+
+    
 }
 /******END CONTACT******/
 
