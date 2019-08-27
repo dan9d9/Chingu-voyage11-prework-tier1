@@ -264,7 +264,7 @@ main {
 }
 
 .text_container {
-    text-align: justify;
+    text-align: center;
     padding: 0.3em;
 }
 
@@ -334,6 +334,10 @@ main {
 
     .image_container { 
         height: 250px;
+    }
+
+    .button_container {
+        height: 70px;
     }
 }
 
