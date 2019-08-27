@@ -283,6 +283,56 @@ bottom: 25%;
 }
 /*END Card Templates*/
 
+/*Card Media Queries*/
+@media screen and (min-width: 700px) {
+    .cards--small {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .cards--small {
+        max-width: 500px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        width: 45vw;
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .cards--small {
+        max-width: 800px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        max-width: 1200px;
+    }
+
+    .image_container { 
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    .cards--small {
+        max-width: 1000px;
+        width: 33vw;
+    }
+
+    .cards--med {
+        max-width: 1400px;
+    }
+
+    .content_container--med {
+        min-height: 80%;
+        }
+}
+/****END CARD MEDIA QUERIES****/
+
 /*******ABOUT US*******/
 .aboutUs {
     position: relative;
@@ -319,10 +369,6 @@ bottom: 25%;
     .aboutUs {
         flex-flow: row wrap;
         justify-content: space-around;
-    }
-
-    .cards--small {
-        width: 25vw;
     }
 }
 /*******END ABOUT US*******/
