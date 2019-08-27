@@ -5,20 +5,6 @@ html {
     font-family: 'Open Sans', serif;
 }
 
-/*FONT SIZE MEDIA QUERIES*/
-@media screen and (min-width: 1500px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 2200px) {
-    html {
-        font-size: 20px;
-    }
-}
-/*****END FONT SIZE QUERIES*******/
-
 body {
     font-size: 1.6rem;
     line-height: 1.25;   
